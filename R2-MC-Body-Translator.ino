@@ -9,6 +9,7 @@ String cmd; //Consohlen Input
 String data;
 byte debug = false; //Debug function
 
+
 void setup()
 {
   // Zuerst initialisieren wir die serielle Schnittstelle des Arduino.
