@@ -34,7 +34,7 @@ void setup()
 
 void parseCommand(String cmd) {
 
-    if (cmd.startsWith("!")) {
+    if (cmd.startsWith("!")||cmd.startsWith(":SE")) {
      
       data = cmd;
       data.remove(0,1);
@@ -47,13 +47,17 @@ void parseCommand(String cmd) {
       } else {
         ToDuinoDOME.print(cmd); ToDuinoDOME.print("\r");
       }
+
+
+
+      
    
     if (cmd == ":CL00"){
-      Serial.print("to Body"); 
+      //Serial.print("to Body"); 
       ToDuinoBODY.print(":CL00\r");
       }
     if (cmd == ":OP00"){ 
-      Serial.print("to Body");
+      // Serial.print("to Body");
       ToDuinoBODY.print(":OP00\r");
       }
     
